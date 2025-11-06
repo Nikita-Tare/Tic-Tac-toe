@@ -1,0 +1,113 @@
+/* 🌸 Reset default browser margin/padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(135deg, #2b5876, #4e4376);
+  color: white;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* 🎯 Container for the board */
+.container {
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5vmin;
+}
+
+/* 🎮 Game board */
+.game {
+  height: 60vmin;
+  width: 60vmin;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5vmin;
+}
+
+/* 🟩 Each box style */
+.box {
+  height: 18vmin;
+  width: 18vmin;
+  border-radius: 1rem;
+  border: none;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.3);
+  font-size: 8vmin;
+  background-color: #ffffc7;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.box:hover {
+  transform: scale(1.1);
+  background-color: #fffab0;
+}
+
+/* 🔘 Buttons */
+#reset-btn,
+#new-btn {
+  padding: 0.8rem 1.5rem;
+  margin-top: 1.5rem;
+  background-color: #191919;
+  border-radius: 0.8rem;
+  font-size: 1.2rem;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+#reset-btn:hover,
+#new-btn:hover {
+  background-color: #ff4757;
+  transform: scale(1.05);
+}
+
+/* 🏆 Winner message */
+#msg {
+  color: #ffffc7;
+  font-size: 5vmin;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
+  margin-bottom: 10px;
+}
+
+/* 📦 Message container */
+.msg-container {
+  height: 30vmin;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hide {
+  display: none;
+}
+
+/* 📱 Responsive Design */
+@media (max-width: 768px) {
+  .game {
+    height: 80vmin;
+    width: 80vmin;
+  }
+  .box {
+    height: 22vmin;
+    width: 22vmin;
+    font-size: 9vmin;
+  }
+  #msg {
+    font-size: 6vmin;
+  }
+}
