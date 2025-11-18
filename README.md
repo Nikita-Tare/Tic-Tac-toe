@@ -1,11 +1,25 @@
-🎮 Tic Tac Toe Game (HTML, CSS, JavaScript)
-A simple browser-based tic tac toe game where two players can play alternately.
-Features:
+# Tic Tac Toe Game (JavaScript)
+A simple **Tic Tac Toe** game made using **HTML, CSS, and JavaScript**.
 
-Interactive UI
+🔗 **Live Demo:** https://nikita-tare.github.io/Tic-Tac-toe/ 
 
-Win detection
 
-Reset and turn-based system
-
-Tech Used: HTML, CSS, JavaScript
+---
+## Features
+- Playable for 2 players (X and O)
+- Shows winner or draw
+- Reset / New Game button
+- Simple and clean UI
+---
+## How to Play
+- Player **X** plays first.
+- Click on any box to place X or O.
+- First to make 3 in a row (line, column, diagonal) wins.
+---
+## Technologies Used
+- HTML  
+- CSS  
+- JavaScript (Vanilla JS)
+---
+## Run Locally
+Just open **index.html** in your browser — no extra setup needed.
